@@ -1,0 +1,5 @@
+Employee(EmpNo(PK), Ename, Job, MGR, Hiredate, Salary, DeptNo)Department(DeptNo(PK), Dname, Location)  
+
+
+select Depart_Details.Dep_Name,COUNT(Emp_Details.Emp_Id)as EmpNo from Emp_Details inner join Depart_Details 
+ON Emp_Details.Dept_No=Depart_Details.Dep_No group by Depart_Details.Dep_Name
